@@ -1,0 +1,4 @@
+intensity: 0.3
+perturbations:
+  - latency
+  - memory_fault

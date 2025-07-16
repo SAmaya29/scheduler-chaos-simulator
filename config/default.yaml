@@ -1,0 +1,10 @@
+workload: "high_cpu_bound"
+num_processes: 10
+duration: 100
+algorithm: "round_robin"
+quantum: 4
+chaos:
+  intensity: 0.3
+  perturbations:
+    - latency
+    - memory_fault

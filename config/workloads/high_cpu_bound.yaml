@@ -1,0 +1,54 @@
+workload: "high_cpu_bound"
+num_processes: 10
+duration: 100
+processes:
+  - pid: 0
+    priority: 0
+    burst_time: 40
+    arrival_time: 0
+    memory_required: 120
+  - pid: 1
+    priority: 1
+    burst_time: 35
+    arrival_time: 2
+    memory_required: 80
+  - pid: 2
+    priority: 2
+    burst_time: 25
+    arrival_time: 3
+    memory_required: 150
+  - pid: 3
+    priority: 0
+    burst_time: 45
+    arrival_time: 5
+    memory_required: 100
+  - pid: 4
+    priority: 1
+    burst_time: 30
+    arrival_time: 7
+    memory_required: 110
+  - pid: 5
+    priority: 2
+    burst_time: 28
+    arrival_time: 9
+    memory_required: 90
+  - pid: 6
+    priority: 0
+    burst_time: 37
+    arrival_time: 11
+    memory_required: 140
+  - pid: 7
+    priority: 1
+    burst_time: 32
+    arrival_time: 13
+    memory_required: 130
+  - pid: 8
+    priority: 2
+    burst_time: 26
+    arrival_time: 15
+    memory_required: 100
+  - pid: 9
+    priority: 0
+    burst_time: 41
+    arrival_time: 17
+    memory_required: 150
