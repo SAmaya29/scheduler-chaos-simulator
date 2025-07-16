@@ -57,17 +57,63 @@ python cli.py --algorithm round_robin --quantum 4 --workload high_cpu_bound --np
 ```
 chaos_scheduler/
 ├── src/
-│   ├── core/                  # Núcleo del simulador y algoritmos
-│   ├── chaos/                 # Motor y perturbaciones de caos
-│   ├── metrics/               # Métricas y estadísticas
-│   ├── visualization/         # Gráficas y dashboards
-│   └── utils/                 # Utilidades y configuración
-├── config/                    # Perfiles de experimento, workloads, caos
-├── tests/                     # Unit, integration, chaos y performance tests
-├── examples/                  # Ejemplos de experimentos y scripts
+│   ├── core/
+│   │   ├── process.py
+│   │   ├── scheduler.py
+│   │   ├── simulator.py
+│   │   ├── experiment.py
+│   │   ├── simulation_result.py
+│   │   └── algorithms/
+│   │       ├── base.py
+│   │       ├── fcfs.py
+│   │       ├── sjf.py
+│   │       ├── round_robin.py
+│   │       ├── priority.py
+│   │       └── multilevel_queue.py
+│   ├── chaos/
+│   │   ├── chaos_engine.py
+│   │   └── perturbations/
+│   │       ├── base.py
+│   │       ├── latency.py
+│   │       ├── memory_fault.py
+│   │       ├── cpu_overload.py
+│   │       ├── interruption.py
+│   │       └── hardware_failure.py
+│   ├── metrics/
+│   │   └── statistics.py
+│   ├── visualization/
+│   │   └── plots.py
+│   └── utils/
+│       ├── config.py
+│       ├── logger.py
+│       └── workload_generator.py
+├── config/
+│   ├── default.yaml
+│   ├── workloads/
+│   └── chaos_profiles/
+├── tests/
+│   ├── test_fcfs.py
+│   ├── test_chaos_engine.py
+│   ├── test_simulator.py
+│   └── test_performance.py
+├── examples/
+│   ├── basic_experiment.py
+│   └── chaos_vs_no_chaos.py
 ├── README.md
-└── cli.py
+├── cli.py
+└── PROJECT_STRUCTURE.md
 ```
+- **src/core/**: Núcleo de la simulación, algoritmos y clases principales.
+- **src/chaos/**: Motor de caos y perturbaciones inyectables.
+- **src/metrics/**: Métricas y estadísticas del sistema.
+- **src/visualization/**: Gráficas y visualización de resultados.
+- **src/utils/**: Utilidades y manejo de configuración.
+- **config/**: Configuración y perfiles predefinidos.
+- **tests/**: Pruebas unitarias y de integración.
+- **examples/**: Ejemplos de uso y experimentos.
+- **cli.py**: CLI principal para correr simulaciones.
+- **README.md**: Documentación principal del proyecto.
+- **PROJECT_STRUCTURE.md**: Este archivo, resumen de la estructura.
 
 ## 🧪 Ejemplo de uso en Python
 
