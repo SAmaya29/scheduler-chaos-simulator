@@ -100,8 +100,8 @@ chaos_scheduler/
 │   ├── basic_experiment.py
 │   └── chaos_vs_no_chaos.py
 ├── README.md
-├── cli.py
-└── PROJECT_STRUCTURE.md
+└── cli.py
+
 ```
 - **src/core/**: Núcleo de la simulación, algoritmos y clases principales.
 - **src/chaos/**: Motor de caos y perturbaciones inyectables.
@@ -113,7 +113,6 @@ chaos_scheduler/
 - **examples/**: Ejemplos de uso y experimentos.
 - **cli.py**: CLI principal para correr simulaciones.
 - **README.md**: Documentación principal del proyecto.
-- **PROJECT_STRUCTURE.md**: Este archivo, resumen de la estructura.
 
 ## 🧪 Ejemplo de uso en Python
 
