@@ -59,15 +59,15 @@
 
 ### Instalación rápida
 ```bash
-git clone https://github.com/tuusuario/chaos_scheduler.git
-cd chaos_scheduler
+git clone https://github.com/SAmaya29/scheduler-chaos-simulator
+cd scheduler-chaos-simulator
 pip install -r requirements.txt
 ```
 
 ### Instalación para desarrollo
 ```bash
-git clone https://github.com/tuusuario/chaos_scheduler.git
-cd chaos_scheduler
+git clone https://github.com/SAmaya29/scheduler-chaos-simulator
+cd scheduler-chaos-simulator
 pip install -e .
 pip install -r requirements-dev.txt
 ```
@@ -307,25 +307,10 @@ python cli.py --config config/custom_experiment.yaml
 
 ---
 
-## 📚 Documentación Adicional
-
-- [🏗️ Guía de Arquitectura](docs/architecture.md)
-- [🔧 API Reference](docs/api.md)
-- [📊 Métricas Detalladas](docs/metrics.md)
-- [🌪️ Guía de Caos](docs/chaos_guide.md)
-- [🎯 Ejemplos Avanzados](examples/README.md)
-
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
----
 
 ## 👥 Autores
 
-- **Tu Nombre** - *Desarrollo inicial* - [TuGitHub](https://github.com/tuusuario)
+- **Sebastian Amaya Perez** - *Desarrollo inicial* - [SAmaya29](https://github.com/SAmaya29)
 
 ---
 
