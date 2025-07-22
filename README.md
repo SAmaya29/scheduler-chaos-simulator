@@ -200,6 +200,30 @@ results.export_csv("stress_test_results.csv")
 results.plot_heatmap()
 ```
 
+### Ejemplo 4: Uso general
+```python
+from src.core.scheduler import ChaosScheduler
+from src.chaos.chaos_engine import ChaosEngine
+from src.metrics.statistics import Statistics
+from src.core.simulator import Simulator
+from src.core.experiment import Experiment
+from src.utils.workload_generator import generate_workload
+from src.chaos.perturbations.latency import LatencyPerturbation
+
+processes = generate_workload("high_cpu_bound", 5, 50)
+scheduler = ChaosScheduler(algorithm="round_robin", quantum=4)
+chaos_engine = ChaosEngine(intensity=0.2, perturbations=[LatencyPerturbation()])
+metrics = Statistics()
+simulator = Simulator(scheduler, chaos_engine, metrics)
+experiment = Experiment("high_cpu_bound", 50, "latency", processes)
+results = simulator.run_experiment(experiment)
+results.generate_report()
+results.export_csv("resultados.csv")
+results.export_json("resultados.json")
+results.plot_metrics()
+results.plot_heatmap()
+```
+
 ---
 
 ## 📂 Arquitectura del Proyecto
